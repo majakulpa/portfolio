@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Web Developer Portfolio | Maja Kulpa</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav class="nav">
+        <ul class="navbar">
+          <li class="navbar__item"><a href="#">Home</a></li>
+          <li class="navbar__item"><a href="#about">About me</a></li>
+          <li class="navbar__item"><a href="#portfolio">Portfolio</a></li>
+          <li class="navbar__item"><a href="#skills">Skills</a></li>
+          <li class="navbar__item"><a href="#footer">Contact me</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <h1 class="container__header container__header--main">
+          Maja Kulpa
+        </h1>
+        <h3 class="container__header container__header--sub">
+          I'm a Melbourne based web developer focused on crafting beautiful
+          websites.
+        </h3>
+
+        <a href="#about"
+          ><svg class="container__icon">
+            <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="about" id="about">
+        <figure class="about__figure">
+          <img src="img/head.jpg" alt="Photo of me" class="about__img" />
+        </figure>
+
+        <div class="about__section">
+          <hr class="about__section--line" />
+          <h3 class="about__section--header-main">About Me</h3>
+
+          <p class="about__section--paragraph">
+            I'm a web developer mostly skilled in Front-End technologies like
+            HTML, CSS, JavaScript and React.
+          </p>
+          <p class="about__section--paragraph">
+            I'm passionate about learning new things and creating beautiful and
+            user‑friendly websites.
+          </p>
+
+          <a href="#portfolio" class="about__section--link">
+            <p class="about__section--heading">See my work</p>
+            <svg class="about__icon">
+              <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+            </svg>
+          </a>
+
+          <hr class="about__section--line" />
+        </div>
+      </div>
+
+      <div class="portfolio" id="portfolio">
+        <img
+          src="img/hogwarts.png"
+          alt="Hogwarts website"
+          class="portfolio__img portfolio__img--left portfolio__1"
+        />
+        <div class="portfolio__section portfolio__section--right portfolio__2">
+          <h3 class="portfolio__section--header">Hogwarts friends</h3>
+          <p class="portfolio__section--paragraph">
+            Website for Harry Potter fans, search for characters, spells and
+            houses, find out everything about them.
+          </p>
+          <p class="portfolio__section--paragraph">
+            Website created with React, CSS and Tachyons.
+          </p>
+          <br />
+          <br />
+
+          <a
+            href="https://hogwarts-friends.herokuapp.com/"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--website"
+            >Go to website <span>&rarr;</span>
+          </a>
+
+          <a
+            href="https://github.com/majakulpa/hogwarts-friends"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--code"
+            >See code &rarr;</a
+          >
+        </div>
+
+        <div class="portfolio__section portfolio__section--left portfolio__4">
+          <h3 class="portfolio__section--header">Face Analysis App</h3>
+          <p class="portfolio__section--paragraph">
+            This app will analyze photo of any person and return information on
+            age, gender, and multicultural appearance for detected face.
+          </p>
+          <p class="portfolio__section--paragraph">
+            Website created with React, Node, Express, PostgreSQL, CSS and
+            Tachyons.
+          </p>
+          <br />
+          <br />
+          <a
+            href="https://face-analysis.herokuapp.com/"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--website"
+            >Go to website <span>&rarr;</span>
+          </a>
+          <a
+            href="https://github.com/majakulpa?tab=repositories"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--code"
+            >See code &rarr;</a
+          >
+        </div>
+        <img
+          src="img/face.png"
+          alt="Face analysis website"
+          class="portfolio__img portfolio__img--right portfolio__3"
+        />
+
+        <img
+          src="img/food.png"
+          alt="Food recipes website"
+          class="portfolio__img portfolio__img--left portfolio__5"
+        />
+        <div class="portfolio__section portfolio__section--right portfolio__6">
+          <h3 class="portfolio__section--header">Food recipes website</h3>
+          <p class="portfolio__section--paragraph">
+            Example of a cooking website with recipes from around the world.
+          </p>
+          <p class="portfolio__section--paragraph">
+            Website created only with HTML and CSS, using CSS grid.
+          </p>
+          <br />
+          <br />
+          <a
+            href="https://majakulpa.github.io/recipes/"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--website"
+            >Go to website &rarr;</a
+          >
+          <a
+            href="https://github.com/majakulpa/recipes"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--code"
+            >See code &rarr;</a
+          >
+        </div>
+
+        <div class="portfolio__section portfolio__section--left portfolio__8">
+          <h3 class="portfolio__section--header">Web design website</h3>
+          <p class="portfolio__section--paragraph">
+            Website for fictional web design company. You can log in and create
+            your own website layout.
+          </p>
+          <p class="portfolio__section--paragraph">
+            Website created with HTML, CSS, Bootstrap, JavaScript, jQuery, PHP
+            and SQL.
+          </p>
+          <br />
+          <br />
+          <a
+            href="http://maiamaja-com.stackstaging.com/new-project/project.php"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--website"
+            >Go to website &rarr;</a
+          >
+          <a
+            href="https://github.com/majakulpa/simple"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--code"
+            >See code &rarr;</a
+          >
+        </div>
+        <img
+          src="img/simple.png"
+          alt="Simple website"
+          class="portfolio__img portfolio__img--right portfolio__7"
+        />
+        <img
+          src="img/fortune.png"
+          alt="Fortune teller website"
+          class="portfolio__img portfolio__img--left portfolio__9"
+        />
+        <div class="portfolio__section portfolio__section--right portfolio__10">
+          <h3 class="portfolio__section--header">Fortune Tellers</h3>
+          <p class="portfolio__section--paragraph">
+            Website contains three sections, you can ask any question and get
+            answer, play simple quiz or get fortune told by magic cards.
+          </p>
+          <p class="portfolio__section--paragraph">
+            Website created with HTML, CSS, JavaScript and Bootstrap.
+          </p>
+          <br />
+          <br />
+          <a
+            href="https://majakulpa.github.io/fortune-teller-website/fortune-teller-portal.html"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--website"
+            >Go to website &rarr;</a
+          >
+          <a
+            href="https://github.com/majakulpa/fortune-teller-website"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--code"
+            >See code &rarr;</a
+          >
+        </div>
+
+        <div class="portfolio__section portfolio__section--left portfolio__12">
+          <h3 class="portfolio__section--header">Fashion website</h3>
+          <p class="portfolio__section--paragraph">
+            Website for fictional fashion magazine with ecommerce beauty and
+            clothing shop.
+          </p>
+          <p class="portfolio__section--paragraph">
+            Website created with WordPress, using Elementor and WooCommerce
+            plugins.
+          </p>
+          <br />
+          <br />
+          <a
+            href="http://maiamaja-com.stackstaging.com/fashion-parade/"
+            target="_blank"
+            class="portfolio__btn portfolio__btn--website"
+            >Go to website &rarr;</a
+          >
+        </div>
+        <img
+          src="img/fashion.png"
+          alt="Fashion website"
+          class="portfolio__img portfolio__img--right portfolio__11"
+        />
+      </div>
+      <!-- <div class="title" id="title-skills">My skills</div> -->
+
+      <div class="skills">
+        <h3 class="skills__header" id="skills">My Skills</h3>
+        <br />
+        <div class="skills__block">
+          <span>HTML5</span>
+          <div class="skills__container">
+            <div
+              class="skills__container--html skills__container--bar"
+              id="bar1"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span>CSS, SASS, Bootstrap</span>
+          <div class="skills__container">
+            <div
+              class="skills__container--css skills__container--bar"
+              id="bar2"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span> JavaScript</span>
+          <div class="skills__container">
+            <div
+              class="skills__container--js skills__container--bar"
+              id="bar3"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span>React JS</span>
+          <div class="skills__container">
+            <div
+              class="skills__container--react skills__container--bar"
+              id="bar4"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span>MySQL, PostgreSQL </span>
+          <div class="skills__container">
+            <div
+              class="skills__container--sql skills__container--bar"
+              id="bar5"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span>Node JS, Express JS </span>
+          <div class="skills__container">
+            <div
+              class="skills__container--node skills__container--bar"
+              id="bar6"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span>WordPress</span>
+          <div class="skills__container">
+            <div
+              class="skills__container--wp skills__container--bar"
+              id="bar7"
+            ></div>
+          </div>
+        </div>
+        <div class="skills__block">
+          <span>PHP</span>
+          <div class="skills__container">
+            <div
+              class="skills__container--php skills__container--bar"
+              id="bar8"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="footer">
+      <div class="footer__section">
+        <div class="footer__section--icons">
+          <p class="footer__section--paragraph">Do you like my work?</p>
+          <h3 class="footer__section--header">Contact me!</h3>
+
+          <a href="mailto:majaweronikakulpa@gmail.com">
+            <svg class="footer__icon footer__icon--mail">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/maja-kulpa-malecka-bb1883189/"
+            target="_blank"
+          >
+            <svg class="footer__icon footer__icon--linkedin">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+
+          <a href="https://github.com/majakulpa" target="_blank">
+            <svg class="footer__icon footer__icon--github">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+
+          <p class="footer__section--copyright copyright-top">
+            This site was built with HTML, CSS, SASS and JavaScript
+          </p>
+          <p class="footer__section--copyright">&copy; by Maja Kulpa 2019</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

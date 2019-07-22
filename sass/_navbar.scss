@@ -1,0 +1,56 @@
+.main {
+  display: grid;
+  grid-template-columns: [left-start] 20rem [left-end] 1fr[right-start] 20rem [right-end];
+
+  height: 100vh;
+
+  @include respond(phone) {
+    height: 60vh;
+  }
+}
+
+.nav {
+  grid-column: left-start / right-end;
+  grid-row: 1 / span 1;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  background-color: $color-light;
+  width: 100%;
+  border-bottom: 1px solid $color-light-grey;
+  z-index: 100;
+}
+
+.navbar__item {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-family: $first-font;
+
+  @include respond(tab-port) {
+    letter-spacing: 0;
+  }
+
+  @include respond(phone) {
+    padding: 1rem 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 1.4rem;
+  }
+
+  & > a {
+    text-decoration: none;
+    color: $color-dark;
+  }
+
+  & > a:hover {
+    font-weight: 400;
+    color: $color-grey;
+  }
+}

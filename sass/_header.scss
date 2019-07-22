@@ -1,0 +1,147 @@
+.container {
+  grid-column: 1 / -1;
+
+  background-color: $color-light-blue;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-light-blue, 0.9),
+      rgba($color-blue, 0.9)
+    ),
+    url(../img/computer.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__header {
+    font-weight: 300;
+    color: $color-light;
+    font-family: $first-font;
+    transition: all 0.5s;
+
+    &--main {
+      font-size: 9rem;
+      animation: move-in-left 2s ease-in;
+      letter-spacing: 0.8rem;
+      margin-bottom: 2rem;
+
+      @include respond(mid-desk) {
+        font-size: 8rem;
+        letter-spacing: 0.3rem;
+      }
+
+      @include respond(phone) {
+        font-size: 4.5rem;
+        letter-spacing: 0.2rem;
+      }
+
+      @include respond(small-phone) {
+        font-size: 3.5rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+
+    &--sub {
+      font-size: 4rem;
+      width: 60%;
+      text-align: center;
+      animation: move-in-right 2s ease-in;
+      letter-spacing: 0.2rem;
+
+      @include respond(mid-desk) {
+        font-size: 3.5rem;
+        width: 80%;
+      }
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+      }
+
+      @include respond(small-phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: $color-light;
+    //transition: all 0.5s;
+    animation: pulsate 1s infinite;
+    position: absolute;
+    bottom: 3rem;
+    cursor: pointer;
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@keyframes move-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes move-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    // transform: 1;
+    opacity: 0;
+    //transform: translateY(5rem);
+  }
+
+  50% {
+    transform: 1.2;
+  }
+
+  100% {
+    transform: 1;
+    // opacity: 1;
+    //transform: translate(0);
+  }
+}

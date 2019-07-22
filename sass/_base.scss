@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+  //16 is default font-size
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem=9px, 9/16
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(bigest-desk) {
+    font-size: 85%; //1rem=12px, 12/16
+  }
+}
+
+body {
+  line-height: 1.7;
+  box-sizing: border-box;
+  color: $color-dark;
+  background-color: $color-light;
+  font-family: $second-font;
+}
+
+//main content
+.content {
+  display: grid;
+  // grid-template-columns:
+  //   [left-start] 20rem [left-end] 1fr [mid-start] 1fr
+  //   [mid-end] 1fr[right-start] 20rem [right-end];
+  grid-template-columns: repeat(6, 1fr);
+}
