@@ -125,27 +125,39 @@
     }
   }
 
-  &__3 {
+  &__1 {
     @include respond(tab-land) {
       grid-row: 3 / span 1;
     }
   }
 
-  &__4 {
+  &__2 {
     @include respond(tab-land) {
       grid-row: 4 / span 1;
     }
   }
 
-  &__7 {
+  &__3 {
     @include respond(tab-land) {
       grid-row: 7 / span 1;
     }
   }
 
-  &__8 {
+  &__4 {
     @include respond(tab-land) {
       grid-row: 8 / span 1;
+    }
+  }
+
+  &__7 {
+    @include respond(tab-land) {
+      grid-row: 5 / span 1;
+    }
+  }
+
+  &__8 {
+    @include respond(tab-land) {
+      grid-row: 6 / span 1;
     }
   }
 

@@ -334,17 +334,23 @@ body {
       color: #f76262;
       border: 1px solid #f76262; }
   @media only screen and (max-width: 75em) {
-    .portfolio__3 {
+    .portfolio__1 {
       grid-row: 3 / span 1; } }
   @media only screen and (max-width: 75em) {
-    .portfolio__4 {
+    .portfolio__2 {
       grid-row: 4 / span 1; } }
   @media only screen and (max-width: 75em) {
-    .portfolio__7 {
+    .portfolio__3 {
       grid-row: 7 / span 1; } }
   @media only screen and (max-width: 75em) {
-    .portfolio__8 {
+    .portfolio__4 {
       grid-row: 8 / span 1; } }
+  @media only screen and (max-width: 75em) {
+    .portfolio__7 {
+      grid-row: 5 / span 1; } }
+  @media only screen and (max-width: 75em) {
+    .portfolio__8 {
+      grid-row: 6 / span 1; } }
   @media only screen and (max-width: 75em) {
     .portfolio__9 {
       grid-row: 9 / span 1; } }
