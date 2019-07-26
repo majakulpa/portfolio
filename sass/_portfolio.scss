@@ -127,13 +127,13 @@
 
   &__1 {
     @include respond(tab-land) {
-      grid-row: 3 / span 1;
+      grid-row: 1 / span 1;
     }
   }
 
   &__2 {
     @include respond(tab-land) {
-      grid-row: 4 / span 1;
+      grid-row: 2 / span 1;
     }
   }
 
@@ -163,14 +163,19 @@
 
   &__9 {
     @include respond(tab-land) {
-      grid-row: 9 / span 1;
+      grid-row: 11 / span 1;
+    }
+  }
+  &__10 {
+    @include respond(tab-land) {
+      grid-row: 12 / span 1;
+      border-bottom: 1px solid $color-grey;
     }
   }
 
   &__12 {
     @include respond(tab-land) {
-      grid-row: 12 / span 1;
-      border-bottom: 1px solid $color-grey;
+      grid-row: 10 / span 1;
     }
   }
 }
