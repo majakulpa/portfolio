@@ -346,6 +346,12 @@ body {
     .portfolio__4 {
       grid-row: 8 / span 1; } }
   @media only screen and (max-width: 75em) {
+    .portfolio__5 {
+      grid-row: 3 / span 1; } }
+  @media only screen and (max-width: 75em) {
+    .portfolio__6 {
+      grid-row: 4 / span 1; } }
+  @media only screen and (max-width: 75em) {
     .portfolio__7 {
       grid-row: 5 / span 1; } }
   @media only screen and (max-width: 75em) {
@@ -358,6 +364,9 @@ body {
     .portfolio__10 {
       grid-row: 12 / span 1;
       border-bottom: 1px solid #a0a0a0; } }
+  @media only screen and (max-width: 75em) {
+    .portfolio__11 {
+      grid-row: 9 / span 1; } }
   @media only screen and (max-width: 75em) {
     .portfolio__12 {
       grid-row: 10 / span 1; } }

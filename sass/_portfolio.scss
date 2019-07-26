@@ -148,6 +148,16 @@
       grid-row: 8 / span 1;
     }
   }
+  &__5 {
+    @include respond(tab-land) {
+      grid-row: 3 / span 1;
+    }
+  }
+  &__6 {
+    @include respond(tab-land) {
+      grid-row: 4 / span 1;
+    }
+  }
 
   &__7 {
     @include respond(tab-land) {
@@ -170,6 +180,11 @@
     @include respond(tab-land) {
       grid-row: 12 / span 1;
       border-bottom: 1px solid $color-grey;
+    }
+  }
+  &__11 {
+    @include respond(tab-land) {
+      grid-row: 9 / span 1;
     }
   }
 
