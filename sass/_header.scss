@@ -23,13 +23,13 @@
     transition: all 0.5s;
 
     &--main {
-      font-size: 9rem;
+      font-size: 7rem;
       animation: move-in-left 2s ease-in;
       letter-spacing: 0.8rem;
       margin-bottom: 2rem;
 
       @include respond(mid-desk) {
-        font-size: 8rem;
+        font-size: 6rem;
         letter-spacing: 0.3rem;
       }
 
@@ -45,14 +45,13 @@
     }
 
     &--sub {
-      font-size: 4rem;
+      font-size: 3rem;
       width: 60%;
       text-align: center;
       animation: move-in-right 2s ease-in;
       letter-spacing: 0.2rem;
 
       @include respond(mid-desk) {
-        font-size: 3.5rem;
         width: 80%;
       }
 
@@ -70,7 +69,6 @@
     height: 4rem;
     width: 4rem;
     fill: $color-light;
-    //transition: all 0.5s;
     animation: pulsate 1s infinite;
     position: absolute;
     bottom: 3rem;
@@ -130,9 +128,7 @@
 
 @keyframes appear {
   0% {
-    // transform: 1;
     opacity: 0;
-    //transform: translateY(5rem);
   }
 
   50% {
@@ -141,7 +137,5 @@
 
   100% {
     transform: 1;
-    // opacity: 1;
-    //transform: translate(0);
   }
 }

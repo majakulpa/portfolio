@@ -6,23 +6,23 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: whitesmoke; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-  @media only screen and (min-width: 131.25em) {
-    html {
-      font-size: 85%; } }
 
 body {
   line-height: 1.7;
   box-sizing: border-box;
   color: #333;
   background-color: whitesmoke;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  max-width: 170rem;
+  margin: 0 auto; }
 
 .content {
   display: grid;
@@ -37,10 +37,10 @@ body {
       height: 60vh; } }
 
 .nav {
-  grid-column: left-start / right-end;
   grid-row: 1 / span 1;
   margin: 0 auto;
   text-align: center;
+  max-width: 170rem;
   position: fixed;
   background-color: whitesmoke;
   width: 100%;
@@ -90,13 +90,13 @@ body {
     font-family: "Poiret One", cursive;
     transition: all 0.5s; }
     .container__header--main {
-      font-size: 9rem;
+      font-size: 7rem;
       animation: move-in-left 2s ease-in;
       letter-spacing: 0.8rem;
       margin-bottom: 2rem; }
       @media only screen and (max-width: 93.75em) {
         .container__header--main {
-          font-size: 8rem;
+          font-size: 6rem;
           letter-spacing: 0.3rem; } }
       @media only screen and (max-width: 37.5em) {
         .container__header--main {
@@ -107,14 +107,13 @@ body {
           font-size: 3.5rem;
           letter-spacing: 0.2rem; } }
     .container__header--sub {
-      font-size: 4rem;
+      font-size: 3rem;
       width: 60%;
       text-align: center;
       animation: move-in-right 2s ease-in;
       letter-spacing: 0.2rem; }
       @media only screen and (max-width: 93.75em) {
         .container__header--sub {
-          font-size: 3.5rem;
           width: 80%; } }
       @media only screen and (max-width: 37.5em) {
         .container__header--sub {
@@ -227,12 +226,12 @@ body {
       color: #216583; }
     .about__section--header-main {
       margin-top: 5rem;
-      font-size: 4rem; }
+      font-size: 3.5rem; }
       @media only screen and (max-width: 56.25em) {
         .about__section--header-main {
           font-size: 3rem; } }
     .about__section--paragraph {
-      font-size: 2.2rem; }
+      font-size: 2rem; }
       @media only screen and (max-width: 56.25em) {
         .about__section--paragraph {
           font-size: 1.8rem; } }
@@ -255,16 +254,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 15rem; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .portfolio {
-      grid-template-rows: repeat(12, max-content); } }
+      grid-template-rows: repeat(16, max-content); } }
   .portfolio__img {
     width: 100%; }
     .portfolio__img--left {
       grid-column: 1 / span 1; }
     .portfolio__img--right {
       grid-column: 2 / -1; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 56.25em) {
       .portfolio__img--left, .portfolio__img--right {
         grid-column: 1 / -1; } }
   .portfolio__section {
@@ -276,7 +275,10 @@ body {
         padding: 5rem; } }
     @media only screen and (max-width: 75em) {
       .portfolio__section {
-        padding-bottom: 15rem; } }
+        padding: 2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__section {
+        padding-bottom: 12rem; } }
     @media only screen and (max-width: 37.5em) {
       .portfolio__section {
         padding: 3rem;
@@ -285,7 +287,7 @@ body {
       grid-column: 1 / span 1; }
     .portfolio__section--right {
       grid-column: 2 / -1; }
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 56.25em) {
       .portfolio__section--left, .portfolio__section--right {
         grid-column: 1 / -1; } }
     .portfolio__section--header {
@@ -293,12 +295,12 @@ body {
       color: #216583;
       text-transform: capitalize;
       font-family: "Poiret One", cursive; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 75em) {
         .portfolio__section--header {
           font-size: 2.5rem; } }
     .portfolio__section--paragraph {
       font-size: 1.8rem; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 75em) {
         .portfolio__section--paragraph {
           font-size: 1.6rem; } }
   .portfolio__btn {
@@ -310,7 +312,7 @@ body {
     border-radius: 4px;
     transition: all 0.3s;
     font-family: "Poiret One", cursive; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .portfolio__btn {
         margin-right: 1rem;
         font-size: 1.6rem;
@@ -333,43 +335,55 @@ body {
       background-color: transparent;
       color: #f76262;
       border: 1px solid #f76262; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .portfolio__1 {
       grid-row: 1 / span 1; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .portfolio__2 {
       grid-row: 2 / span 1; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .portfolio__3 {
-      grid-row: 7 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__4 {
-      grid-row: 8 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__5 {
       grid-row: 3 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__6 {
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__4 {
       grid-row: 4 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__7 {
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__5 {
       grid-row: 5 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__8 {
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__6 {
       grid-row: 6 / span 1; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__7 {
+      grid-row: 7 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__8 {
+      grid-row: 8 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
     .portfolio__9 {
-      grid-row: 11 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__10 {
-      grid-row: 12 / span 1;
-      border-bottom: 1px solid #a0a0a0; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__11 {
       grid-row: 9 / span 1; } }
-  @media only screen and (max-width: 75em) {
-    .portfolio__12 {
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__10 {
       grid-row: 10 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__11 {
+      grid-row: 11 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__12 {
+      grid-row: 12 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__13 {
+      grid-row: 13 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__14 {
+      grid-row: 14 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__15 {
+      grid-row: 15 / span 1; } }
+  @media only screen and (max-width: 56.25em) {
+    .portfolio__16 {
+      grid-row: 16 / span 1;
+      border-bottom: 1px solid #a0a0a0; } }
 
 @keyframes pulsate {
   0% {
@@ -449,7 +463,7 @@ body {
     .skills__container--php {
       width: 10%; }
     .skills__container--wp {
-      width: 15%; }
+      width: 65%; }
 
 .animate {
   background-color: #f76262;

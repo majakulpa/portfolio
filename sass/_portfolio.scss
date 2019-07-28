@@ -4,8 +4,8 @@
   grid-template-columns: repeat(2, 1fr);
   margin-top: 15rem;
 
-  @include respond(tab-land) {
-    grid-template-rows: repeat(12, max-content);
+  @include respond(tab-port) {
+    grid-template-rows: repeat(16, max-content);
   }
 
   &__img {
@@ -21,7 +21,7 @@
 
     &--left,
     &--right {
-      @include respond(tab-land) {
+      @include respond(tab-port) {
         grid-column: 1 / -1;
       }
     }
@@ -37,7 +37,11 @@
     }
 
     @include respond(tab-land) {
-      padding-bottom: 15rem;
+      padding: 2rem;
+    }
+
+    @include respond(tab-port) {
+      padding-bottom: 12rem;
     }
 
     @include respond(phone) {
@@ -55,7 +59,7 @@
 
     &--left,
     &--right {
-      @include respond(tab-land) {
+      @include respond(tab-port) {
         grid-column: 1 / -1;
       }
     }
@@ -66,7 +70,7 @@
       text-transform: capitalize;
       font-family: $first-font;
 
-      @include respond(phone) {
+      @include respond(tab-land) {
         font-size: 2.5rem;
       }
     }
@@ -74,7 +78,7 @@
     &--paragraph {
       font-size: 1.8rem;
 
-      @include respond(phone) {
+      @include respond(tab-land) {
         font-size: 1.6rem;
       }
     }
@@ -90,7 +94,7 @@
     transition: all 0.3s;
     font-family: $first-font;
 
-    @include respond(phone) {
+    @include respond(tab-land) {
       margin-right: 1rem;
       font-size: 1.6rem;
       padding: 0.6rem 1.6rem;
@@ -126,71 +130,91 @@
   }
 
   &__1 {
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       grid-row: 1 / span 1;
     }
   }
 
   &__2 {
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       grid-row: 2 / span 1;
     }
   }
 
   &__3 {
-    @include respond(tab-land) {
-      grid-row: 7 / span 1;
+    @include respond(tab-port) {
+      grid-row: 3 / span 1;
     }
   }
 
   &__4 {
-    @include respond(tab-land) {
-      grid-row: 8 / span 1;
-    }
-  }
-  &__5 {
-    @include respond(tab-land) {
-      grid-row: 3 / span 1;
-    }
-  }
-  &__6 {
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       grid-row: 4 / span 1;
     }
   }
-
-  &__7 {
-    @include respond(tab-land) {
+  &__5 {
+    @include respond(tab-port) {
       grid-row: 5 / span 1;
     }
   }
-
-  &__8 {
-    @include respond(tab-land) {
+  &__6 {
+    @include respond(tab-port) {
       grid-row: 6 / span 1;
     }
   }
 
+  &__7 {
+    @include respond(tab-port) {
+      grid-row: 7 / span 1;
+    }
+  }
+
+  &__8 {
+    @include respond(tab-port) {
+      grid-row: 8 / span 1;
+    }
+  }
+
   &__9 {
-    @include respond(tab-land) {
-      grid-row: 11 / span 1;
+    @include respond(tab-port) {
+      grid-row: 9 / span 1;
     }
   }
   &__10 {
-    @include respond(tab-land) {
-      grid-row: 12 / span 1;
-      border-bottom: 1px solid $color-grey;
+    @include respond(tab-port) {
+      grid-row: 10 / span 1;
     }
   }
   &__11 {
-    @include respond(tab-land) {
-      grid-row: 9 / span 1;
+    @include respond(tab-port) {
+      grid-row: 11 / span 1;
     }
   }
 
   &__12 {
-    @include respond(tab-land) {
-      grid-row: 10 / span 1;
+    @include respond(tab-port) {
+      grid-row: 12 / span 1;
+    }
+  }
+  &__13 {
+    @include respond(tab-port) {
+      grid-row: 13 / span 1;
+    }
+  }
+  &__14 {
+    @include respond(tab-port) {
+      grid-row: 14 / span 1;
+    }
+  }
+  &__15 {
+    @include respond(tab-port) {
+      grid-row: 15 / span 1;
+    }
+  }
+  &__16 {
+    @include respond(tab-port) {
+      grid-row: 16 / span 1;
+      border-bottom: 1px solid $color-grey;
     }
   }
 }

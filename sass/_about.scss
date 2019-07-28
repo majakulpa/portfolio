@@ -78,7 +78,7 @@
 
     &--header-main {
       margin-top: 5rem;
-      font-size: 4rem;
+      font-size: 3.5rem;
 
       @include respond(tab-port) {
         font-size: 3rem;
@@ -86,7 +86,7 @@
     }
 
     &--paragraph {
-      font-size: 2.2rem;
+      font-size: 2rem;
 
       @include respond(tab-port) {
         font-size: 1.8rem;

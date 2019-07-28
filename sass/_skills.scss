@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   margin-top: 20rem;
-  //height: 95vh;
 
   @include respond(tab-land) {
     margin-top: 10rem;
@@ -96,7 +95,7 @@
     }
 
     &--wp {
-      width: 15%;
+      width: 65%;
     }
   }
 }

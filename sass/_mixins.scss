@@ -30,17 +30,4 @@
       @content;
     }
   }
-
-  @if $breakpoint == big-desk {
-    @media only screen and (max-width: 118.75em) {
-      //1900px
-      @content;
-    }
-  }
-  @if $breakpoint == bigest-desk {
-    @media only screen and (min-width: 131.25em) {
-      //2100px
-      @content;
-    }
-  }
 }
