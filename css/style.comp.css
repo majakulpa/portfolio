@@ -452,6 +452,8 @@ body {
       width: 95%; }
     .skills__container--css {
       width: 85%; }
+    .skills__container--wp {
+      width: 65%; }
     .skills__container--js {
       width: 55%; }
     .skills__container--react {
@@ -462,8 +464,6 @@ body {
       width: 25%; }
     .skills__container--php {
       width: 10%; }
-    .skills__container--wp {
-      width: 65%; }
 
 .animate {
   background-color: #f76262;
